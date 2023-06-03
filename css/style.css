@@ -1,11 +1,54 @@
 body {
-  background-color: #f9f7fe;
-  font-family: sans-serif;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/327/original/retrowave-sci-fi-neon-gradient-grid-space-cyberpunk-synthwave-background-video.jpeg?1685829591");
+  background-size: cover;
+
+  animation: slidein 100s;
+
+  animation-fill-mode: forwards;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate;
 }
 
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 1600px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 1350px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 1600px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 1350px;
+  }
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+}
 h1 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 36px;
 }
 
@@ -25,10 +68,10 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background: white;
+  background: linear-gradient(-225deg, #ff3cac 0%, #562b7c 52%, #2b86c5 100%);
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
+  border-radius: 80px;
 }
 
 .city {
@@ -58,8 +101,21 @@ select {
   line-height: 48px;
 }
 
+select {
+  color: black;
+  font-family: "Orbitron", sans-serif;
+}
+a {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
 footer {
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
